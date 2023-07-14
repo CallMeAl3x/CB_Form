@@ -31,7 +31,7 @@ Les utilisateurs doivent pouvoir :
 
 ### Capture d'écran
 
-[Screenshot](./images/preview.png)(./images/preview-mobile.png)
+[preview](./images/preview.png)[preview-mobile](./images/preview-mobile.png)
 
 ### Liens
 
