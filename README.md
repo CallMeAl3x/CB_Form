@@ -31,7 +31,7 @@ Les utilisateurs doivent pouvoir :
 
 ### Capture d'écran
 
-[preview](http://alexandre.bonefons.mmi-velizy.fr/Projets_HTML-CSS-JS/card_details_form/images/preview.png)[preview-mobile](.http://alexandre.bonefons.mmi-velizy.fr/Projets_HTML-CSS-JS/card_details_form/images/preview-mobile.png)
+[preview](http://alexandre.bonefons.mmi-velizy.fr/Projets_HTML-CSS-JS/card_details_form/images/preview.png)[preview-mobile](http://alexandre.bonefons.mmi-velizy.fr/Projets_HTML-CSS-JS/card_details_form/images/preview-mobile.png)
 
 ### Liens
 
