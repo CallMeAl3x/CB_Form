@@ -11,10 +11,8 @@ Il s'agit d'une solution pour le défi [Formulaire interactif de détails de car
 - [Ma démarche](#ma-démarche)
   - [Construit avec](#construit-avec)
   - [Ce que j'ai appris](#ce-que-jai-appris)
-  - [Développement continu](#développement-continu)
   - [Ressources utiles](#ressources-utiles)
 - [Auteur](#auteur)
-- [Remerciements](#remerciements)
 
 ## Aperçu
 
