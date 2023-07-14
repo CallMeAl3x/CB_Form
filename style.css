@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'Space_Grotesk';
+    src: url('./fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf');
+    font-weight: 500;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space_Grotesk';
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+::root {
+    --text-color: hsl(278, 68%, 11%)
+}
+
+main {
+    display: flex;
+}
+
+.violet_container {
+    background-image: url('./images/bg-main-desktop.png');
+    width: 30%;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.white_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.form_container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    width: 35%;
+}
+
+.form_container form {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    font-weight: 500;
+    display: flex;
+}
+
+.form_container form input {
+    font-family: 'Space_Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border: grey 1px solid;
+    border-radius: 10px;
+    padding: 7.5px;
+    margin-right: 10px;
+    color: black
+}
+
+.form_container form label {
+    font-family: 'Space_Grotesk';
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.comfirm_button {
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Space_Grotesk';
+    font-size: 16px;
+    font-weight: 500;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border-color: transparent;
+}
+
+#cvc_input {
+    margin-left: 15px;
+    width: 100%;
+}
+
+#cvclabel {
+    margin-left: 45px;
+}
+
+.exp-cvc {
+    display: flex;
+}
+
+#exp_date_input, #exp_date_input1 {
+    width: 60px;
+}
+
+.card1, .card2 {
+    position: absolute;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.43);
+    line-height: 0px;
+    min-width: fit-content;
+}
+
+.card1 {
+    top: 18%;
+    left: 33%;
+    max-width: 500px;
+    color: white;
+}
+
+#card_number_error, #mmerror, #mmerror1 {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: -20px;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+}
+
+#mmerror, #mmerror1  {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.card2 {
+    left: 50%;
+    top: 53%;
+    color: var(--text-color);
+    max-width: 500px;
+}
+
+.card_back, .card_front {
+    width: 100%;
+}
+
+.card_infos_numb, .card_infos_logo, .card_infos_card_holder, .card_infos_exp, .card_infos_cvc {
+    position: absolute;
+    color: white;
+}
+
+.card_infos_card_holder, .card_infos_exp, .card_infos_cvc{
+    font-size: 14px;
+    font-weight: 500;
+    font-size: 14px;
+} 
+
+.card_infos_numb {
+    top: 60%;
+    left: 5%;
+    font-size: 24px;
+    letter-spacing: 6px;
+}
+
+.card_infos_logo {
+    top: 10%;
+    left: 5%;
+}
+
+.card_infos_card_holder {
+    top: 85%;
+    left: 5%;
+}
+
+.card_infos_exp {
+    top: 85%;
+    left: 80%;
+}
+
+.card_infos_cvc {
+    top: 49%;
+    left: 80%;
+}
+
+.submit_container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0%;
+    letter-spacing: 5px;
+}
+
+.submit_container svg {
+    margin-bottom: 20px;
+}
+
+.submit_container h1 {
+    margin-bottom: 5px
+}
+
+.submit_container h3 {
+    color: hsl(279, 6%, 55%);
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.submit_container button {
+    padding: 15px;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-family: 'Space_Grotesk';
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 1058px) {
+    .form_container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .card_infos_numb {
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .card_infos_numb {
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 928px) {
+    main {
+        flex-direction: column;
+    }
+
+    .violet_container {
+        width: 100%;
+        height: 30vh;    
+    }
+    
+    .card1 {
+        top: 55%;
+        left: 2%;
+        max-width: 325px;
+    }
+
+    .card2 {
+        top: 21%;
+        left: 18%;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .white_container {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .form_container {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+

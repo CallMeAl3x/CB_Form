@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="violet_container">
+      <div class="card1_container">
+        <div class="card1">
+          <img src="./images/bg-card-front.png" class="card_front">
+          <div class="card_infos_logo"><img src="./images/card-logo.svg"> </div>
+          <div class="card_infos_numb" id="num_card_output">0000 0000 0000 0000</div>
+          <div class="card_infos_card_holder" id="num_card_nameholder_output">Jane Appleseed</div>
+          <div class="card_infos_exp"><span id="exp_date_output">00/00</span></div>
+        </div>
+      </div>
+
+      <div class="card2">
+        <img src="./images/bg-card-back.png" class="card_back">
+        <div class="card_infos_cvc" id="cvc_output">000</div>
+
+      </div>
+    </div>
+    <div class="white_container">
+      <div class="form_container" id="form">
+        <form>
+          <label>Cardholder name</label>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="num_card_nameholder_input">
+          <label>Card number</label>
+          <input type="text" id="num_card_input" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" oninput="validateCardNumber(this)" aria-required="true" aria-invalid="true"> 
+            <span id="card_number_error">Invalid card number. Please enter a valid 16-digit number.</span>
+            <label>EXP. DATE (MM/YY) <span id="cvclabel">CVC</span></label>
+            <div class="exp-cvc"> 
+            <input type="number" placeholder="MM" id="exp_date_input" oninput="limitinput(this), blankinput(this)" maxlength="2"/>
+            <span id="card_number_error">blank</span>
+            <input type="number" placeholder="YY" id="exp_date_input1" oninput="blankinput(this), limitinput(this)" maxlength="2" aria-required="true" aria-invalid="true" />
+            
+            <input type="number" id="cvc_input" placeholder="e.g. 123" oninput="limitinput(this), blankinput1(this)" maxlength="3" aria-required="true" aria-invalid="true">
+          </div>
+          <span id="mmerror">This field require 2 numbers</span>
+          <span id="mmerror1">This field require 3 numbers</span>
+          <button class="comfirm_button">Comfirm</button>
+        </form>
+
+
+        
+        <section class="submit_container" id="submitcontent">
+            <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+            <h1>Thank you!</h1>
+            <h3>We've added your card details</h3>
+            <button>Continue</button>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
